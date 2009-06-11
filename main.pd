@@ -1,4 +1,4 @@
 #N canvas 68 16 1190 660 10;
-#X obj 57 65 cnv 15 1050 500 empty empty OSC42_LiveMix 800 20 2 24
+#X obj 17 23 cnv 15 1050 500 empty empty OSC42_LiveMix 800 20 2 24
 -128992 -262144 0;
-#X obj 65 73 mix;
+#X obj 23 53 mix;

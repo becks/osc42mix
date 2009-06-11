@@ -1,4 +1,4 @@
-#N canvas 207 -35 1073 789 10;
+#N canvas 566 0 1073 789 10;
 #X obj 339 7 loadbang;
 #X obj 237 452 inlet~;
 #X msg 157 20 bang;
@@ -48,7 +48,7 @@
 #X obj 23 297 moses -80;
 #X msg 461 170 bang;
 #X obj 22 255 moses -10;
-#X obj 118 61 cnv 15 61 430 empty empty empty 20 12 0 14 -162280 -66577
+#X obj 118 60 cnv 15 61 430 empty empty empty 20 12 0 14 -162280 -66577
 0;
 #X obj 145 238 vu 10 120 \$0-vu-in empty -1 -8 0 8 -66577 -262144 0
 0;
@@ -61,19 +61,21 @@
 -1 -1 0 1;
 #X text 136 200 MUTE;
 #X text 120 287 0;
-#X obj 161 254 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X obj 158 263 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 161 270 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 158 279 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
 #X obj 126 220 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1.00008 256;
-#X obj 161 285 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
+#X obj 158 295 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
 -4034;
 #X obj 126 384 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -40.06 256;
+-4034 -1 -1 -38.7 256;
 #X obj 128 166 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
-0 10 -232576 -1 -1 2000 1;
+0 10 -232576 -1 -1 1850 1;
 #X text 135 149 PAN;
+#X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
+0;
 #X connect 0 0 15 0;
 #X connect 0 0 7 0;
 #X connect 0 0 18 0;

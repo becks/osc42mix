@@ -1,4 +1,4 @@
-#N canvas 140 0 1073 789 10;
+#N canvas 148 -78 1073 789 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 151 46 0.5;
@@ -8,30 +8,30 @@
 #X obj 22 255 moses -10;
 #X obj 118 60 cnv 15 91 430 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 144 237 vu 10 120 \$0-vu-in-lx empty -1 -8 0 8 -66577 -262144
+#X obj 148 288 vu 10 120 \$0-vu-in-lx empty -1 -8 0 8 -66577 -262144
 0 0;
-#X obj 134 237 vsl 10 120 0 3 0 0 \$0-fader-out-lx \$0-fader-in-lx
+#X obj 138 288 vsl 10 120 0 3 0 0 \$0-fader-out-lx \$0-fader-in-lx
 empty 0 -9 0 10 -260097 -1 -1 3967 1;
-#X obj 120 183 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
+#X obj 128 231 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
 -262144 -262144 0 1;
-#X text 137 182 PRE;
-#X obj 120 200 tgl 15 0 \$0-mute-out \$0-mute-in empty 17 7 0 10 -257985
+#X text 145 232 PRE;
+#X obj 128 247 tgl 15 0 \$0-mute-out \$0-mute-in empty 17 7 0 10 -257985
 -1 -1 0 1;
-#X text 136 200 MUTE;
-#X text 114 287 0;
-#X obj 119 262 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X text 145 248 MUTE;
+#X text 118 338 0;
+#X obj 123 313 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 119 277 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 123 328 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
-#X obj 126 220 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 130 271 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1.00008 256;
-#X obj 119 293 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
+#X obj 123 344 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
 -4034;
-#X obj 126 384 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 128 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -4034 -1 -1 -100 256;
-#X obj 140 166 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
+#X obj 144 195 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
-#X text 148 150 PAN;
+#X text 152 179 PAN;
 #X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
 0;
 #N canvas 91 70 540 300 preout 0;
@@ -67,17 +67,17 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X connect 11 1 4 0;
 #X connect 14 0 0 0;
 #X restore 466 173 pd preout;
-#N canvas 412 13 450 300 vuin 0;
+#N canvas 260 111 639 425 vuin 0;
 #X msg -291 -128 1;
 #X obj -326 -73 *;
 #X obj -226 -23 *~;
 #X obj -279 -65 r \$0-pan-out;
-#X obj -319 -37 - 100;
+#X obj -313 -25 - 100;
 #X obj -289 -189 inlet;
-#X obj -297 49 outlet;
+#X obj -291 61 outlet;
 #X obj -268 -106 r \$0-sp0-lx;
 #X obj -271 -160 r \$0-sp1-lx;
-#X obj -332 -4 s \$0-vu-in-lx;
+#X obj -326 8 s \$0-vu-in-lx;
 #X connect 0 0 1 1;
 #X connect 1 0 4 0;
 #X connect 3 0 2 1;
@@ -125,7 +125,7 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X connect 10 0 2 0;
 #X connect 15 0 0 0;
 #X restore 269 280 pd manyspigot;
-#N canvas 559 150 599 411 audioout 0;
+#N canvas 67 82 599 411 audioout 0;
 #X obj -202 -234 inlet~;
 #X obj -132 -54 outlet~;
 #X obj -139 -126 *~;
@@ -143,21 +143,21 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X restore 425 334 pd audioout;
 #X obj 417 272 inlet~;
 #X obj 446 433 outlet~;
-#X obj 161 238 vu 10 120 \$0-vu-in-rx empty -1 -8 0 8 -66577 -262144
+#X obj 165 289 vu 10 120 \$0-vu-in-rx empty -1 -8 0 8 -66577 -262144
 0 0;
-#X obj 173 237 vsl 10 120 0 3 0 0 \$0-fader-out-rx \$0-fader-in-rx
+#X obj 177 288 vsl 10 120 0 3 0 0 \$0-fader-out-rx \$0-fader-in-rx
 empty 0 -9 0 10 -260097 -1 -1 3967 1;
-#X obj 167 383 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 168 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -4034 -1 -1 -100 256;
 #X obj 17 188 r \$0-vu-in-lx;
-#X text 181 285 0;
-#X obj 186 260 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X text 185 336 0;
+#X obj 190 311 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 186 275 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 190 326 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
-#X obj 186 291 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
+#X obj 190 342 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
 -4034;
-#X obj 163 221 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 167 272 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1.00008 256;
 #X obj 766 257 inlet~;
 #X obj 782 430 outlet~;
@@ -274,12 +274,14 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj 277 445 r \$0-vu-in-rx;
 #X msg 256 122 0;
 #X obj 160 464 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 0 256;
+-260097 9 256;
 #X obj 121 464 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 0 256;
+-260097 8 256;
 #X obj 271 167 f \$1;
 #X obj 319 166 f \$2;
 #X obj 435 29 t b b b b b b b b b;
+#X text 158 698 comment;
+#X text 157 62 stereo;
 #X connect 0 0 53 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;

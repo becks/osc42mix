@@ -30,9 +30,9 @@
 -4034;
 #X obj 129 438 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -4034 -1 -1 -100 256;
-#X obj 131 220 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
+#X obj 131 199 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
-#X text 138 203 PAN;
+#X text 138 184 PAN;
 #X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
 0;
 #N canvas 382 272 540 300 preout 0;
@@ -165,6 +165,7 @@
 -260097 4 256;
 #X text 103 695 comment;
 #X obj 206 94 f \$1;
+#X text 146 61 mono;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;

@@ -1,8 +1,8 @@
-#N canvas 202 0 1073 789 10;
+#N canvas 444 -79 1073 789 10;
 #X obj 148 287 vu 10 120 \$0-vu-in empty -1 -8 0 8 -66577 -262144 0
 0;
 #X obj 130 286 vsl 10 120 0 3 0 0 \$0-fader-out \$0-fader-in empty
-0 -9 0 10 -260097 -1 -1 5867 1;
+0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj 339 7 loadbang;
 #X obj 237 452 inlet~;
 #X obj 119 232 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
@@ -62,15 +62,17 @@
 #X obj 532 27 inlet;
 #X obj 533 240 r \$0-fader-out;
 #X obj 119 266 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--260097 -1 -1 1.47908 256;
+-260097 -1 -1 1.00008 256;
 #X msg 473 503 0;
 #X obj 159 334 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
 -4034;
 #X obj 47 290 moses -80;
 #X obj 127 466 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -5.55 256;
+-4034 -1 -1 -100 256;
 #X msg 461 170 bang;
 #X obj 48 257 moses -10;
+#X obj 120 211 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
+0 10 -232576 -1 -1 1850 1;
 #X connect 0 0 59 0;
 #X connect 1 0 55 0;
 #X connect 2 0 22 0;
@@ -103,6 +105,7 @@
 #X connect 20 0 17 1;
 #X connect 20 0 43 0;
 #X connect 22 0 23 0;
+#X connect 22 0 62 0;
 #X connect 24 0 30 1;
 #X connect 26 0 1 0;
 #X connect 27 0 28 1;

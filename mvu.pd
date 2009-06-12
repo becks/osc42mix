@@ -1,4 +1,4 @@
-#N canvas 207 11 1073 789 10;
+#N canvas 442 49 1073 789 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 259 56 bang;
@@ -26,9 +26,9 @@
 #X obj 161 349 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -4034
 -4034;
 #X obj 129 438 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -45.58 256;
+-4034 -1 -1 -100 256;
 #X obj 131 199 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
-0 10 -232576 -1 -1 0 1;
+0 10 -232576 -1 -1 1850 1;
 #X text 138 184 PAN;
 #X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
 0;
@@ -157,8 +157,7 @@
 #X obj 382 420 outlet~;
 #X obj 506 402 outlet~;
 #X obj 126 465 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 0 256;
-#X text 103 695 comment;
+-260097 4 256;
 #X obj 206 94 f \$1;
 #X text 146 61 mono;
 #X obj 11 298 moses -95;
@@ -166,19 +165,68 @@
 #X obj 41 225 moses -3;
 #X obj 161 398 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -262144
 -262144;
+#X obj 123 220 tgl 15 0 \$0-slpls empty empty 17 7 0 10 -159808 -1
+-1 0 1;
+#X text 140 220 S IPL;
+#X msg 76 128 0;
+#N canvas 260 158 493 442 locslp 0;
+#X obj 154 54 inlet;
+#X obj -5 202 s \$1-slpl;
+#X obj 175 102 r \$1-mutepl;
+#X obj 39 115 r \$0-slpls;
+#X obj 185 221 s \$0-mute-in;
+#X obj 120 194 f 0;
+#X obj 321 122 f;
+#X obj 172 172 spigot;
+#X msg 238 138 1;
+#X obj 188 125 t f b;
+#X obj 317 158 sel 0 1;
+#X msg 245 164 0;
+#X obj 106 328 + 1;
+#X obj 41 325 f;
+#X obj 106 377 print;
+#X obj 39 275 sel 0 1;
+#X obj 169 276 -1;
+#X obj 55 245 f;
+#X obj 47 151 t f b f;
+#X obj 172 379 s hmspl;
+#X text 182 356 todo... count how many spl;
+#X connect 0 0 6 0;
+#X connect 2 0 9 0;
+#X connect 3 0 18 0;
+#X connect 5 0 4 0;
+#X connect 6 0 10 0;
+#X connect 7 0 4 0;
+#X connect 8 0 7 1;
+#X connect 9 0 7 0;
+#X connect 9 1 6 0;
+#X connect 10 0 8 0;
+#X connect 10 1 11 0;
+#X connect 11 0 7 1;
+#X connect 12 0 14 0;
+#X connect 12 0 13 1;
+#X connect 12 0 19 0;
+#X connect 13 0 12 0;
+#X connect 15 1 13 0;
+#X connect 17 0 15 0;
+#X connect 18 0 1 0;
+#X connect 18 1 5 0;
+#X connect 18 2 17 0;
+#X restore 235 196 pd locslp;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;
 #X connect 0 0 21 1;
+#X connect 0 0 37 0;
 #X connect 1 0 3 0;
 #X connect 1 0 4 0;
 #X connect 2 0 23 1;
-#X connect 2 0 30 0;
+#X connect 2 0 29 0;
 #X connect 3 0 18 0;
 #X connect 4 0 8 0;
+#X connect 5 0 31 0;
 #X connect 5 0 32 0;
 #X connect 5 0 33 0;
-#X connect 5 0 34 0;
 #X connect 7 0 17 0;
 #X connect 8 0 15 0;
 #X connect 14 0 16 0;
@@ -192,9 +240,11 @@
 #X connect 24 1 26 0;
 #X connect 24 2 27 0;
 #X connect 25 0 24 0;
-#X connect 30 0 28 0;
-#X connect 32 0 35 0;
-#X connect 32 1 16 0;
-#X connect 33 1 14 0;
-#X connect 34 1 13 0;
+#X connect 29 0 28 0;
+#X connect 31 0 34 0;
+#X connect 31 1 16 0;
+#X connect 32 1 14 0;
+#X connect 33 1 13 0;
+#X connect 35 0 38 0;
+#X connect 37 0 35 0;
 #X coords 0 -1 1 1 61 430 1 118 60;

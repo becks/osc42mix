@@ -1,5 +1,5 @@
 running mixer:
-$ pd -jack -inchannels 12 -outchannels 14 -rt main.pd
+$ pd -jack -inchannels 12 -outchannels 20 -rt main.pd
 
 mono panning using -6db Pan Law:
 http://www.prorec.com/Articles/tabid/109/EntryId/329/The-Pan-Law-Of-The-Land.aspx

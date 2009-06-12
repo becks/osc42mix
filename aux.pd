@@ -1,4 +1,4 @@
-#N canvas 538 110 742 522 10;
+#N canvas 538 -141 742 522 10;
 #X obj 100 100 cnv 15 120 50 empty empty empty 20 12 0 14 -33289 -260097
 0;
 #X obj 171 124 nbx 2 24 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
@@ -12,32 +12,32 @@
 #X obj 191 53 f \$2;
 #X obj 192 287 throw~ singal_\$2;
 #X obj 73 367 catch~ singal_\$2;
-#X obj 86 413 env~ 16384;
-#X obj 27 218 r~ \$2-0afpl;
-#X obj 27 240 r~ \$2-1afpl;
 #X obj 123 217 r~ \$2-2-afpl;
 #X obj 125 242 r~ \$2-3-afpl;
 #X obj 222 216 r~ \$2-4-afpl;
 #X obj 226 240 r~ \$2-5-afpl;
-#X obj 318 215 r~ \$2-6afpl;
 #X obj 319 241 r~ \$2-7-afpl;
 #X obj 105 442 - 100;
 #X obj 101 117 nbx 4 18 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 16
 -262144 -260097 -172929 -100 256;
+#X obj 27 218 r~ \$2-0-afpl;
+#X obj 27 240 r~ \$2-1-afpl;
+#X obj 318 215 r~ \$2-6-afpl;
+#X obj 86 413 env~ 65536;
 #X connect 2 0 1 0;
 #X connect 3 0 6 0;
 #X connect 6 0 7 0;
 #X connect 6 1 2 0;
 #X connect 7 0 5 0;
-#X connect 9 0 10 0;
-#X connect 10 0 19 0;
+#X connect 9 0 20 0;
+#X connect 10 0 8 0;
 #X connect 11 0 8 0;
 #X connect 12 0 8 0;
 #X connect 13 0 8 0;
 #X connect 14 0 8 0;
-#X connect 15 0 8 0;
-#X connect 16 0 8 0;
+#X connect 15 0 16 0;
 #X connect 17 0 8 0;
 #X connect 18 0 8 0;
-#X connect 19 0 20 0;
+#X connect 19 0 8 0;
+#X connect 20 0 15 0;
 #X coords 0 -1 1 1 120 50 1 100 100;

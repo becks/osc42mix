@@ -23,7 +23,7 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj 130 276 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1.00008 256;
 #X obj 128 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -37.71 256;
+-4034 -1 -1 -100 256;
 #X obj 144 195 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
 #X text 152 179 PAN;
@@ -128,7 +128,7 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj -104 -305 inlet;
 #X obj -31 -293 inlet;
 #X obj -152 -202 r \$0-fader-out-lx;
-#X obj -255 -200 env~ 65536;
+#X obj -255 -200 env~ 16384;
 #X connect 0 0 2 0;
 #X connect 0 0 7 0;
 #X connect 2 0 1 0;
@@ -143,7 +143,7 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj 177 293 vsl 10 120 0 3 0 0 \$0-fader-out-rx \$0-fader-in-rx
 empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj 168 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -37.71 256;
+-4034 -1 -1 -100 256;
 #X obj 17 188 r \$0-vu-in-lx;
 #X text 185 341 0;
 #X obj 190 316 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
@@ -220,7 +220,7 @@ empty 0 -9 0 10 -260097 -1 -1 3967 1;
 #X obj -104 -305 inlet;
 #X obj -31 -293 inlet;
 #X obj -152 -202 r \$0-fader-out-rx;
-#X obj -255 -200 env~ 65536;
+#X obj -255 -200 env~ 16384;
 #X connect 0 0 2 0;
 #X connect 0 0 7 0;
 #X connect 2 0 1 0;

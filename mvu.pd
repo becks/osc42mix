@@ -24,7 +24,7 @@
 #X obj 129 274 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1.00008 256;
 #X obj 129 438 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -38.5 256;
+-4034 -1 -1 -37.67 256;
 #X obj 131 199 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
 #X text 138 184 PAN;
@@ -121,7 +121,7 @@
 #X connect 11 0 2 0;
 #X connect 16 0 0 0;
 #X restore 269 280 pd manyspigot;
-#N canvas 681 120 599 411 audioout 0;
+#N canvas 199 322 599 411 audioout 1;
 #X obj -202 -234 inlet~;
 #X obj -238 -18 outlet~;
 #X obj -50 -124 expr 1-$f1;
@@ -137,7 +137,7 @@
 #X obj -31 -293 inlet;
 #X obj -255 -265 s~ \$0-preinlet;
 #X obj 20 -65 s~ \$0-postinlet;
-#X obj -255 -200 env~ 65536;
+#X obj -255 -200 env~ 16384;
 #X connect 0 0 9 0;
 #X connect 0 0 13 0;
 #X connect 0 0 15 0;
@@ -222,9 +222,9 @@
 1;
 #X obj 128 137 tgl 15 0 empty empty empty 17 7 0 10 -191407 -1 -1 0
 1;
-#X obj 128 152 tgl 15 0 empty empty empty 17 7 0 10 -191407 -1 -1 1
+#X obj 128 152 tgl 15 0 empty empty empty 17 7 0 10 -191407 -1 -1 0
 1;
-#X obj 128 167 tgl 15 0 empty empty empty 17 7 0 10 -191407 -1 -1 1
+#X obj 128 167 tgl 15 0 empty empty empty 17 7 0 10 -191407 -1 -1 0
 1;
 #X text 145 109 AUX2;
 #X text 145 123 AUX3;

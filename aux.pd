@@ -1,13 +1,13 @@
-#N canvas 538 -141 742 522 10;
+#N canvas 538 0 742 522 10;
 #X obj 100 100 cnv 15 120 50 empty empty empty 20 12 0 14 -33289 -260097
 0;
 #X obj 171 124 nbx 2 24 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
--1 -260097 -260097 14 256;
+-1 -260097 -260097 17 256;
 #X obj 284 68 f \$1;
 #X obj 289 18 loadbang;
 #X text 120 108 AUX;
 #X obj 171 101 nbx 2 24 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 18
--260097 -1 -1 1 256;
+-260097 -1 -1 4 256;
 #X obj 237 16 t b b;
 #X obj 191 53 f \$2;
 #X obj 192 287 throw~ singal_\$2;
@@ -24,12 +24,14 @@
 #X obj 27 240 r~ \$2-1-afpl;
 #X obj 318 215 r~ \$2-6-afpl;
 #X obj 86 413 env~ 65536;
+#X obj 228 395 dac~ \$1;
 #X connect 2 0 1 0;
 #X connect 3 0 6 0;
 #X connect 6 0 7 0;
 #X connect 6 1 2 0;
 #X connect 7 0 5 0;
 #X connect 9 0 20 0;
+#X connect 9 0 21 0;
 #X connect 10 0 8 0;
 #X connect 11 0 8 0;
 #X connect 12 0 8 0;

@@ -1,4 +1,4 @@
-#N canvas 368 -20 836 789 10;
+#N canvas 266 0 836 789 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 259 56 bang;
@@ -10,7 +10,7 @@
 #X obj 148 292 vu 10 120 \$0-vu-in empty -1 -8 0 8 -66577 -262144 0
 0;
 #X obj 135 291 vsl 10 120 0 2 0 0 \$0-fader-out \$0-fader-in empty
-0 -9 0 10 -260097 -1 -1 6600 1;
+0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 123 237 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
 -262144 -262144 0 1;
 #X text 140 236 PRE;
@@ -22,9 +22,9 @@
 #X obj 161 333 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
 #X obj 129 274 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--260097 -1 -1 1.10924 256;
+-260097 -1 -1 1 256;
 #X obj 129 438 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -29.46 256;
+-4034 -1 -1 -100 256;
 #X obj 131 199 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
 #X text 138 184 PAN;
@@ -139,7 +139,6 @@
 #X obj 20 -65 s~ \$0-postinlet;
 #X obj -255 -200 env~ 16384;
 #X obj -146 -171 pow 3;
-#X obj 191 -120 print;
 #X msg 71 -261 0.9;
 #X connect 0 0 9 0;
 #X connect 0 0 13 0;
@@ -158,14 +157,13 @@
 #X connect 12 0 5 1;
 #X connect 15 0 10 0;
 #X connect 16 0 9 1;
-#X connect 16 0 17 0;
-#X connect 18 0 16 0;
+#X connect 17 0 16 0;
 #X restore 425 334 pd audioout;
 #X obj 417 272 inlet~;
 #X obj 382 420 outlet~;
 #X obj 506 402 outlet~;
 #X obj 127 465 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 0 256;
+-260097 6 256;
 #X obj 206 94 f \$1;
 #X text 146 61 mono;
 #X obj 11 298 moses -95;
@@ -251,11 +249,24 @@
 #X obj 497 629 s~ 4-\$1-afpl;
 #X obj 500 655 s~ 5-\$1-afpl;
 #X obj 501 683 s~ 6-\$1-afpl;
+#X obj 122 74 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
+-159808;
+#X text 140 71 MIDI;
+#X obj 166 569 v m_fader\$1;
+#X obj 105 618 midicc;
+#X obj 115 661 expr ($f1/127)*2;
+#X obj 196 528 del 1000;
+#X obj 603 299 midicc;
+#X obj 694 209 del 1000;
+#X obj 664 250 v m_pan\$1;
+#X obj 613 342 expr ($f1/127);
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;
 #X connect 0 0 20 1;
 #X connect 0 0 35 0;
+#X connect 0 0 68 0;
+#X connect 0 0 70 0;
 #X connect 1 0 3 0;
 #X connect 1 0 4 0;
 #X connect 2 0 22 1;
@@ -300,4 +311,14 @@
 #X connect 55 0 62 0;
 #X connect 56 0 54 0;
 #X connect 56 0 55 0;
+#X connect 65 0 66 0;
+#X connect 66 0 63 0;
+#X connect 66 1 67 0;
+#X connect 67 0 8 0;
+#X connect 68 0 65 0;
+#X connect 69 0 63 0;
+#X connect 69 1 72 0;
+#X connect 70 0 71 0;
+#X connect 71 0 69 0;
+#X connect 72 0 17 0;
 #X coords 0 -1 1 1 61 430 1 118 60;

@@ -1,5 +1,5 @@
 running mixer:
-$ pd -jack -inchannels 12 -outchannels 20 -rt main.pd
+$ pd -jack -inchannels 12 -outchannels 20 -alsamidi -rt main.pd
 
 
 see routing.pd for more info on routing

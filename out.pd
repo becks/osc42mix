@@ -1,4 +1,4 @@
-#N canvas 0 0 1255 711 10;
+#N canvas 0 207 1255 711 10;
 #X obj 62 -37 inlet~;
 #X obj 474 -38 inlet~;
 #X obj 112 -38 inlet~;
@@ -35,27 +35,27 @@
 #X obj 432 520 s \$0-vurx;
 #X obj 115 60 cnv 15 200 260 empty empty Master_Out 50 10 0 12 -33289
 -260097 0;
-#X obj 187 160 vu 12 120 empty empty -1 -8 0 8 -66577 -1 1 0;
-#X obj 221 159 vu 12 120 empty empty -1 -8 0 10 -66577 -1 0 0;
-#X obj 171 159 vsl 10 120 0 2 0 0 empty empty empty 0 -9 0 10 -260097
+#X obj 188 121 vu 15 160 empty empty -1 -8 0 8 -66577 -1 0 0;
+#X obj 218 120 vu 15 160 empty empty -1 -8 0 10 -66577 -1 0 0;
+#X obj 170 120 vsl 15 160 0 2 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 5950 1;
-#X obj 241 156 vsl 10 120 0 2 0 0 empty empty empty 0 -9 0 10 -260097
+#X obj 238 119 vsl 15 160 0 2 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 5950 1;
 #X obj 170 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -45.13 256;
+-4034 -1 -1 -100 256;
 #X obj 217 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -45.13 256;
-#X obj 167 137 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-4034 -1 -1 -100 256;
+#X obj 168 90 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
-#X obj 214 137 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 216 87 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
-#X obj 152 172 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X obj 152 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 152 188 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 152 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
-#X obj 254 170 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X obj 256 148 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 254 186 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 256 162 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
 #X obj 951 -38 inlet~;
 #X obj 892 -39 inlet~;

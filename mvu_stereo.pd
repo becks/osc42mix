@@ -1,31 +1,31 @@
-#N canvas 207 0 1073 789 10;
+#N canvas 207 146 1073 789 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 151 46 0.5;
 #X msg 36 98 1;
-#X obj 118 60 cnv 15 91 430 empty empty empty 20 12 0 14 -162280 -66577
+#X obj 118 61 cnv 15 91 430 empty empty empty 20 12 0 14 -162280 -66577
 0;
-#X obj 148 293 vu 10 120 \$0-vu-in-lx empty -1 -8 0 8 -66577 -262144
+#X obj 148 287 vu 10 120 \$0-vu-in-lx empty -1 -8 0 8 -66577 -262144
 0 0;
-#X obj 138 293 vsl 10 120 0 2 0 0 \$0-fader-out-lx \$0-fader-in-lx
-empty 0 -9 0 10 -260097 -1 -1 4779 1;
-#X obj 128 231 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
+#X obj 138 286 vsl 10 120 0 2 0 0 \$0-fader-out-lx \$0-fader-in-lx
+empty 0 -9 0 10 -260097 -1 -1 5950 1;
+#X obj 129 229 tgl 15 0 \$0-pre-out \$0-pre-in empty 17 7 0 10 -4160
 -262144 -262144 0 1;
-#X text 145 232 PRE;
-#X obj 128 252 tgl 15 0 \$0-mute-out \$0-mute-in empty 17 7 0 10 -257985
+#X text 145 230 PRE;
+#X obj 128 248 tgl 15 0 \$0-mute-out \$0-mute-in empty 17 7 0 10 -257985
 -1 -1 0 1;
-#X text 145 253 MUTE;
-#X obj 123 318 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X text 145 249 MUTE;
+#X obj 123 311 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 123 333 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 123 326 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
-#X obj 130 276 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--260097 -1 -1 0.803193 256;
-#X obj 128 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 130 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-260097 -1 -1 1 256;
+#X obj 128 432 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -4034 -1 -1 -100 256;
-#X obj 144 195 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
+#X obj 143 193 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
 0 10 -232576 -1 -1 1850 1;
-#X text 152 179 PAN;
+#X text 152 172 PAN;
 #X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
 0;
 #N canvas 91 70 540 300 preout 0;
@@ -137,19 +137,19 @@ empty 0 -9 0 10 -260097 -1 -1 4779 1;
 #X restore 425 334 pd audioout;
 #X obj 417 272 inlet~;
 #X obj 446 433 outlet~;
-#X obj 165 294 vu 10 120 \$0-vu-in-rx empty -1 -8 0 8 -66577 -262144
+#X obj 165 287 vu 10 120 \$0-vu-in-rx empty -1 -8 0 8 -66577 -262144
 0 0;
-#X obj 177 293 vsl 10 120 0 2 0 0 \$0-fader-out-rx \$0-fader-in-rx
-empty 0 -9 0 10 -260097 -1 -1 5060 1;
-#X obj 168 439 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 177 286 vsl 10 120 0 2 0 0 \$0-fader-out-rx \$0-fader-in-rx
+empty 0 -9 0 10 -260097 -1 -1 5950 1;
+#X obj 168 432 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -4034 -1 -1 -100 256;
 #X obj 17 188 r \$0-vu-in-lx;
-#X obj 190 316 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
+#X obj 190 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
-#X obj 190 331 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
+#X obj 190 324 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -260097
 -260097;
-#X obj 167 277 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--260097 -1 -1 0.85042 256;
+#X obj 167 269 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+-260097 -1 -1 1 256;
 #X obj 766 257 inlet~;
 #X obj 782 430 outlet~;
 #N canvas 480 46 800 593 manyspigot2 0;
@@ -261,9 +261,9 @@ empty 0 -9 0 10 -260097 -1 -1 5060 1;
 #X restore 815 158 pd preout2;
 #X obj 277 445 r \$0-vu-in-rx;
 #X msg 256 122 0;
-#X obj 160 464 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
+#X obj 160 457 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
 -260097 9 256;
-#X obj 121 464 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
+#X obj 121 457 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
 -260097 8 256;
 #X obj 271 167 f \$1;
 #X obj 319 166 f \$2;
@@ -274,7 +274,7 @@ empty 0 -9 0 10 -260097 -1 -1 5060 1;
 #X obj 283 554 moses -95;
 #X obj 282 512 moses -15;
 #X obj 301 482 moses -3;
-#X obj 122 75 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
+#X obj 122 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
 -159808;
 #X text 143 78 MIDI;
 #X obj 72 624 midicc;

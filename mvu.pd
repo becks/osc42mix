@@ -1,4 +1,4 @@
-#N canvas 333 119 819 905 10;
+#N canvas 392 37 819 905 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 259 56 bang;
@@ -210,7 +210,7 @@
 #X text 139 72 MIDI;
 #X obj 241 570 v m_fader\$1;
 #X obj 188 669 expr ($f1/127)*2;
-#X obj 196 528 del 1000;
+#X obj 217 484 del 1000;
 #X obj 603 299 midicc;
 #X obj 694 209 del 1000;
 #X obj 664 250 v m_pan\$1;
@@ -238,7 +238,7 @@
 0 10 -232576 -1 -1 1850 1;
 #X text 140 259 PAN;
 #X obj 128 547 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 6 256;
+-260097 3 256;
 #X obj 124 302 tgl 15 0 \$0-slpls empty empty 17 7 0 10 -159808 -1
 -1 0 1;
 #X text 141 302 S IPL;
@@ -261,6 +261,8 @@
 -262144 -262144 0 1;
 #X obj 128 238 hsl 44 10 0 1 0 0 empty empty empty -2 -8 0 10 -45076
 -262144 -262144 0 1;
+#X obj 35 598 r osc_m_fader\$1;
+#X obj 20 370 r osc_m_pan\$1;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;
@@ -322,4 +324,6 @@
 #X connect 71 0 26 1;
 #X connect 72 0 27 1;
 #X connect 73 0 28 1;
+#X connect 74 0 47 0;
+#X connect 75 0 56 0;
 #X coords 0 -1 1 1 61 520 1 118 60;

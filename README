@@ -4,5 +4,3 @@ $ pd -jack -inchannels 12 -outchannels 20 -alsamidi -rt -send "; pd dsp 1" main.
 
 see routing.pd for more info on routing
 
-mono panning using -6db Pan Law:
-http://www.prorec.com/Articles/tabid/109/EntryId/329/The-Pan-Law-Of-The-Land.aspx

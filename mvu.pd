@@ -1,4 +1,4 @@
-#N canvas 245 0 819 905 10;
+#N canvas 697 -81 819 905 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 259 56 bang;
@@ -250,7 +250,7 @@
 0 10 -232576 -1 -1 1850 1;
 #X text 140 259 PAN;
 #X obj 128 547 nbx 2 24 0 30 0 0 empty empty empty 0 -8 0 18 -1 -260097
--260097 3 256;
+-260097 4 256;
 #X obj 124 302 tgl 15 0 \$0-slpls empty empty 17 7 0 10 -159808 -1
 -1 0 1;
 #X text 141 302 S IPL;

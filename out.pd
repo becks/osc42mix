@@ -42,12 +42,12 @@
 #X obj 238 119 vsl 15 160 0 2 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 7950 1;
 #X obj 170 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -41.61 256;
+-4034 -1 -1 -34.51 256;
 #X obj 217 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -40.9 256;
+-4034 -1 -1 -34.51 256;
 #X obj 168 90 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
-#X obj 216 87 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
+#X obj 217 91 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
 #X obj 152 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
@@ -96,6 +96,8 @@
 #X obj 82 560 r osc_s_master_fader_\$1;
 #X obj 81 589 r osc_s_master_fader_\$2;
 #X obj 240 561 r osc_s_master_pan_\$1;
+#X obj 127 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -159808
+-159808;
 #X connect 0 0 17 0;
 #X connect 0 0 63 0;
 #X connect 1 0 17 0;
@@ -198,5 +200,7 @@
 #X connect 78 0 70 0;
 #X connect 79 0 73 0;
 #X connect 80 0 37 0;
+#X connect 80 0 83 0;
 #X connect 81 0 38 0;
+#X connect 81 0 83 0;
 #X coords 0 0 1 1 200 260 1 115 60;

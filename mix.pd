@@ -1,16 +1,16 @@
 #N canvas 0 0 1697 978 10;
-#X obj 740 291 out 12 13;
-#X obj 388 658 loadbang;
-#X msg 481 664 bang;
-#X obj 407 705 dsp;
-#X obj 793 212 tgl 35 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
+#X obj 736 244 out 12 13;
+#X obj 384 611 loadbang;
+#X msg 477 617 bang;
+#X obj 403 658 dsp;
+#X obj 789 165 tgl 35 0 empty empty empty 17 7 0 10 -258113 -1 -1 1
 1;
 #X floatatom 556 807 5 0 0 0 - - -;
 #X text 595 806 % mean-cpu-load;
 #X floatatom 556 790 5 0 0 0 - - -;
 #X text 595 788 % peak-cpu-load;
 #X text 580 736 DSP START/STOP;
-#X obj 148 690 adc~ 1 2 3 4 5 6 7 8 9 10 11 12;
+#X obj 144 643 adc~ 1 2 3 4 5 6 7 8 9 10 11 12;
 #N canvas 25 500 1255 300 slpl 0;
 #X obj 197 24 r 0-slpl;
 #X obj 280 21 r 1-slpl;
@@ -85,26 +85,28 @@
 #X connect 15 0 13 0;
 #X connect 15 0 14 0;
 #X restore 1028 315 pd slpl;
-#X obj 16 82 cnv 15 780 80 empty empty AUX_4_PRE_FL_-_2_POST_FL 20
+#X obj 12 35 cnv 15 780 80 empty empty AUX_4_PRE_FL_-_2_POST_FL 20
 9 0 14 -162280 -258113 0;
-#X obj 29 99 aux 14 1;
-#X obj 407 100 aux 17 4;
-#X obj 155 99 aux 15 2;
-#X obj 281 100 aux 16 3;
-#X obj 533 100 aux 18 5;
-#X obj 659 100 aux 19 6;
-#X obj 863 151 make_midi_map;
-#X obj 873 194 make_osc_map;
-#X obj 212 178 mvu 3;
-#X obj 398 178 mvu 6;
-#X obj 336 178 mvu 5;
-#X obj 88 178 mvu 1;
-#X obj 150 178 mvu 2;
-#X obj 26 178 mvu 0;
-#X obj 274 178 mvu 4;
-#X obj 459 178 mvu 7;
-#X obj 529 267 mvu_stereo 8 9;
-#X obj 621 267 mvu_stereo 10 11;
+#X obj 25 52 aux 14 1;
+#X obj 403 53 aux 17 4;
+#X obj 151 52 aux 15 2;
+#X obj 277 53 aux 16 3;
+#X obj 529 53 aux 18 5;
+#X obj 655 53 aux 19 6;
+#X obj 859 104 make_midi_map;
+#X obj 869 147 make_osc_map;
+#X obj 208 131 mvu 3;
+#X obj 394 131 mvu 6;
+#X obj 332 131 mvu 5;
+#X obj 84 131 mvu 1;
+#X obj 146 131 mvu 2;
+#X obj 22 131 mvu 0;
+#X obj 270 131 mvu 4;
+#X obj 455 131 mvu 7;
+#X obj 525 220 mvu_stereo 8 9;
+#X obj 799 24 cnv 15 1 1 empty empty http://msound.org 20 12 0 18 -128992
+-258113 0;
+#X obj 617 220 mvu_stereo 10 11;
 #X connect 1 0 4 0;
 #X connect 2 0 4 0;
 #X connect 3 0 7 0;
@@ -120,8 +122,8 @@
 #X connect 10 7 28 0;
 #X connect 10 8 29 0;
 #X connect 10 9 29 1;
-#X connect 10 10 30 0;
-#X connect 10 11 30 1;
+#X connect 10 10 31 0;
+#X connect 10 11 31 1;
 #X connect 21 0 0 6;
 #X connect 21 1 0 7;
 #X connect 22 1 0 12;
@@ -138,6 +140,6 @@
 #X connect 28 1 0 15;
 #X connect 29 0 0 16;
 #X connect 29 1 0 17;
-#X connect 30 0 0 18;
-#X connect 30 1 0 19;
+#X connect 31 0 0 18;
+#X connect 31 1 0 19;
 #X coords 0 -1 1 1 1000 770 1 10 10;

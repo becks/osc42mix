@@ -22,9 +22,9 @@ empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 130 268 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
 #X obj 128 432 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -37.69 256;
+-4034 -1 -1 -100 256;
 #X obj 143 193 hsl 38 10 0 1 0 0 \$0-pan-out \$0-pan-in empty -2 -8
-0 10 -232576 -1 -1 1700 1;
+0 10 -232576 -1 -1 1850 1;
 #X text 152 172 PAN;
 #X obj 119 73 cnv 15 2 410 empty empty empty 20 12 0 14 -33289 -33289
 0;
@@ -145,7 +145,7 @@ empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 177 286 vsl 10 120 0 2 0 0 \$0-fader-out-rx \$0-fader-in-rx
 empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 168 432 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -37.68 256;
+-4034 -1 -1 -100 256;
 #X obj 17 188 r \$0-vu-in-lx;
 #X obj 190 309 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -258113
 -258113;
@@ -280,9 +280,9 @@ empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 283 554 moses -95;
 #X obj 282 512 moses -15;
 #X obj 301 482 moses -3;
-#X obj 122 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
+#X obj 124 73 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
 -159808;
-#X text 143 78 MIDI;
+#X text 138 72 MIDI;
 #X obj 72 624 midicc;
 #X obj 85 661 expr ($f1/127)*2;
 #X obj 108 581 del 1000;
@@ -309,6 +309,9 @@ empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X obj 856 477 expr if($f1 < 1 \, $f1 \, 1);
 #X obj 854 510 expr if($f1 > 0 \, $f1 \, 0);
 #X obj 768 673 print;
+#X obj 124 89 bng 15 250 50 0 empty empty empty 17 7 0 10 -33289 -159808
+-159808;
+#X text 137 90 OSC;
 #X connect 0 0 63 0;
 #X connect 1 0 2 0;
 #X connect 1 0 3 0;
@@ -376,8 +379,11 @@ empty 0 -9 0 10 -260097 -1 -1 5950 1;
 #X connect 63 11 61 0;
 #X connect 64 0 60 0;
 #X connect 65 0 6 0;
+#X connect 65 0 78 0;
 #X connect 66 0 25 0;
+#X connect 66 0 78 0;
 #X connect 67 0 15 0;
+#X connect 67 0 78 0;
 #X connect 68 0 75 0;
 #X connect 69 0 71 0;
 #X connect 70 0 72 0;

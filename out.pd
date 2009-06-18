@@ -1,4 +1,4 @@
-#N canvas 270 -6 1255 711 10;
+#N canvas 25 0 1255 711 10;
 #X obj 62 -37 inlet~;
 #X obj 474 -38 inlet~;
 #X obj 112 -38 inlet~;
@@ -42,9 +42,9 @@
 #X obj 238 119 vsl 15 160 0 2 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 7950 1;
 #X obj 170 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -100 256;
+-4034 -1 -1 -41.61 256;
 #X obj 217 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -100 256;
+-4034 -1 -1 -40.9 256;
 #X obj 168 90 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
 #X obj 216 87 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10

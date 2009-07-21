@@ -1,4 +1,4 @@
-#N canvas 697 -81 819 905 10;
+#N canvas 370 -228 819 905 10;
 #X obj 339 7 loadbang;
 #X msg 157 20 bang;
 #X msg 259 56 bang;
@@ -279,6 +279,7 @@
 -159808;
 #X text 148 59 comment;
 #X text 138 79 OSC;
+#X obj 81 697 s sosc\$1;
 #X connect 0 0 3 0;
 #X connect 0 0 2 0;
 #X connect 0 0 4 0;
@@ -331,6 +332,7 @@
 #X connect 43 0 55 0;
 #X connect 45 0 54 0;
 #X connect 46 0 53 0;
+#X connect 54 0 78 0;
 #X connect 58 0 20 0;
 #X connect 66 0 35 0;
 #X connect 66 1 38 0;

@@ -42,9 +42,9 @@
 #X obj 238 119 vsl 15 160 0 2 0 0 empty empty empty 0 -9 0 10 -260097
 -1 -1 7950 1;
 #X obj 170 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -34.51 256;
+-4034 -1 -1 -24.78 256;
 #X obj 217 296 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
--4034 -1 -1 -34.51 256;
+-4034 -1 -1 -24.78 256;
 #X obj 168 90 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
 -260097 -1 -1 1 256;
 #X obj 217 91 nbx 3 14 -1e+37 1e+37 0 0 empty empty empty 0 -8 0 10
@@ -98,6 +98,8 @@
 #X obj 240 561 r osc_s_master_pan_\$1;
 #X obj 127 95 bng 15 250 50 0 empty empty empty 17 7 0 10 -66577 -159808
 -159808;
+#X obj 138 655 s sosc\$1;
+#X obj 229 656 s sosc\$2;
 #X connect 0 0 17 0;
 #X connect 0 0 63 0;
 #X connect 1 0 17 0;
@@ -160,6 +162,8 @@
 #X connect 38 0 42 0;
 #X connect 38 0 67 0;
 #X connect 38 0 68 0;
+#X connect 39 0 84 0;
+#X connect 40 0 85 0;
 #X connect 47 0 16 0;
 #X connect 47 0 63 9;
 #X connect 48 0 17 0;

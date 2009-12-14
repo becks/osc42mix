@@ -1,4 +1,4 @@
-#N canvas 114 -317 884 662 10;
+#N canvas 114 0 884 662 10;
 #X obj 343 26 print;
 #X obj 88 21 dumpOSC 9003;
 #X obj 30 190 s osc_m_fader0;
@@ -33,7 +33,7 @@
 #X connect 1 0 0 0;
 #X connect 1 0 26 0;
 #X connect 26 0 28 0;
-#X connect 26 2 29 0;
+#X connect 26 1 29 0;
 #X connect 28 0 2 0;
 #X connect 28 1 3 0;
 #X connect 28 2 4 0;
